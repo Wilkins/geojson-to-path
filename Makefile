@@ -1,2 +1,2 @@
 togpx.js: index.js node_modules
-	browserify -s geojsontopath index.js > geojsontopath.js
+	browserify -s geojson-to-path index.js > geojson-to-path.js

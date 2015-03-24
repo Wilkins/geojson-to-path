@@ -1,5 +1,5 @@
 
-function geojson_to_path( geojson ) {
+function geojsonToPath( geojson ) {
 
   var points = [];
   
@@ -16,7 +16,6 @@ function geojson_to_path( geojson ) {
     // LineStrings
     case "LineString":
     case "MultiLineString":
-	console.log("" + c[1] + "," + c[0]);
       var coords = f.geometry.coordinates;
       if (f.geometry.type == "LineString") coords = [coords];
       coords.forEach(function(coordinates) {
@@ -33,4 +32,4 @@ function geojson_to_path( geojson ) {
   return gpx_str;
 };
 
-module.exports = geojson_to_path;
+module.exports = geojsonToPath;
