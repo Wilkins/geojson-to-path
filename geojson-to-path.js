@@ -31,7 +31,7 @@ function geojsonToPath( geojson ) {
   });
   gpx_str = points.join(':');
   return gpx_str;
-};
+}
 
 module.exports = geojsonToPath;
 
